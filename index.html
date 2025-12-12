@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EagleWay Trucking Application</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <img src="logo.png" alt="EagleWay Logo" class="logo">
+    <h1>EagleWay Trucking Application</h1>
+    <form id="truckingForm" enctype="multipart/form-data">
+        <label>Full Name</label>
+        <input type="text" name="fullname" required>
+
+        <label>Phone Number (only numbers)</label>
+        <input type="text" name="phone" pattern="\d+" required>
+
+        <label>Email Address</label>
+        <input type="email" name="email" required>
+
+        <label>Nationality</label>
+        <input type="text" name="nationality" required>
+
+        <label>OTR Experience (years)</label>
+        <input type="number" name="otr" min="0" required>
+
+        <label>Weekly Miles</label>
+        <select name="weekly_miles" required>
+            <option value="4000">4000</option>
+            <option value="4500">4500</option>
+            <option value="5000">5000</option>
+        </select>
+
+        <label>ELD</label>
+        <select name="eld" required>
+            <option value="4w_on_4d_off">4 weeks on | 4 days off</option>
+            <option value="3w_on_3d_off">3 weeks on | 3 days off</option>
+            <option value="5-6w_on_5-6d_off">5-6 weeks on | 5-6 days off</option>
+        </select>
+
+        <label>Payment Experience</label>
+        <select name="payment_exp" required>
+            <option value="1-2_years_25_60">1 to 2 years: 25% / 60 CPM max</option>
+            <option value="2+_years_27_65">From 2 years: 27% / 65 CPM max</option>
+        </select>
+
+        <label>Endorsements</label>
+        <input type="checkbox" name="endorsements[]" value="twic"> TWIC
+        <input type="checkbox" name="endorsements[]" value="hazmat"> Hazmat
+        <input type="checkbox" name="endorsements[]" value="tanker"> Tanker (for Hazmat only)
+
+        <label>Trailer</label>
+        <select name="trailer" required>
+            <option value="dry_van">Dry Van</option>
+            <option value="reefer">Reefer</option>
+            <option value="dry_reefer">Dry Van + Reefer</option>
+        </select>
+
+        <label>CDL Front</label>
+        <input type="file" name="cdl_front" accept="image/*" required>
+
+        <label>CDL Back</label>
+        <input type="file" name="cdl_back" accept="image/*" required>
+
+        <label>Medical</label>
+        <input type="file" name="medical" accept="image/*" required>
+
+        <button type="submit" class="submit-btn">Submit Application</button>
+    </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
