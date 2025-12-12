@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0A2A57, #1E3A8A);
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(14, 59, 128, 0.95);
+    padding: 20px;
+    border-radius: 10px;
+}
+.logo {
+    display: block;
+    max-width: 200px;
+    margin: 0 auto 20px auto;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+}
+input[type="file"] {
+    padding: 3px;
+}
+.submit-btn {
+    background-color: #FFD700;
+    color: #0A2A57;
+    font-weight: bold;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+}
